@@ -6,10 +6,6 @@
 
 let lightSwitch = document.getElementById('onoffswitch')
 console.log('On Off')
-chrome.storage.sync.get('color', function(data) {
-  lightSwitch.style.backgroundColor = data.color
-  lightSwitch.setAttribute('value', data.color)
-})
 
 function toggleEnabledDisabled() {
   alert('Test')
