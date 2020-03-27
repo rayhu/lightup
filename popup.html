@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="popup.js"></script>
+  <title>Light Up</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/lightup.png" alt="Light up logo">
+    </div>
+
+    <small>
+      <span data-i18n="about_version">Version</span>: <span id="current-version">0.02</span>
+      <br>
+    </small>
+  </header>
+
+  <section id="disableButton" class="options settings_block" style="visibility: visible;">
+    <div class="onoffswitch switch" aria-label="Toggle on or off">
+      <h1> <a href="#" onclick="toggleEnabledDisabled()">Light Up is On </a></h1>
+      <input aria-hidden="false" id="onoffswitch" type="checkbox" checked>
+      <label id="onoffswitch__label" for="onoffswitch">
+      </label>
+    </div>
+  </section>
+
+</body>
+
+</html>
